@@ -74,3 +74,19 @@ query_id,answer
 outputs/final_v5/top50_long.csv
 b3049e047d81794784376b9e18a40d7c09a86c71bc450b49a8b026e5cd2f20a4
 ```
+
+## Артефакты
+
+Подготовленные retrieval- и model-артефакты для воспроизведения результата доступны по ссылке:
+
+https://drive.google.com/drive/folders/1AYv-s6MrqCia1RKY6l4PDsFkkXygmuWR?usp=share_link
+
+Скачайте архив `candidate_generation_artifacts.tar.gz` и распакуйте его в корень проекта:
+
+```bash
+tar -xzf candidate_generation_artifacts.tar.gz
+
+
+PYTHONPATH=src python -u src/final_pipeline.py
+
+В результате в корне проекта будет создан answer.csv
